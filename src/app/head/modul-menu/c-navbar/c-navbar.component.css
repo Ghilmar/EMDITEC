@@ -1,0 +1,99 @@
+.label-letra{
+    position: absolute;   
+    top: 20%;
+  }
+  .contenedor-letras{
+   
+    display: flex;
+    width: 260px;
+    height: 35px;
+    color: whitesmoke;
+  
+    line-height:  40px;
+    font-size:1.3rem;
+    font-family: 'Microsoft JhengHei Light';
+    margin: auto;
+    
+    overflow: hidden;
+  }
+  
+  .ul2{
+    list-style:none;
+    padding-left: 10px;
+    animation: cambiar 7s infinite;
+    
+  }
+  .ul2, p{
+    margin: 0;
+  }
+  
+  @media screen and (max-width:996px){
+    .label-letra{
+        display: none;
+    }
+    
+  }
+  @keyframes cambiar{
+    0%{margin-top: 0;}
+    20%{margin-top: 0;}
+    
+    25%{margin-top: -40px;}
+    50%{margin-top: -40px;}
+    
+    55%{margin-top: -80px;}
+    80%{margin-top: -80px;}
+    
+    85%{margin-top: -40px;}
+    95%{margin-top: -40px;}
+    
+    100%{margin-top: 0;}
+  }
+  
+  .logo{
+  
+    height: 40px;
+    line-height: 40px;
+    font-size: 24px;
+    float: left;    
+  }
+  .img-logo{
+    width: 63px; 
+    height: 63px; 
+    margin-top: -12px;
+  }
+  .letra{
+    font-family: 'Microsoft JhengHei Light';
+    font-size:1.1rem;
+  }
+  
+  @media screen and (min-width:996px){
+  
+  .ul-prin{
+    position: relative;
+    transition: color .35s ease;
+  }
+  
+  
+  .ul-prin a:before {
+   
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 0;
+    transition: width 0s ease, background .35s ease;
+  }
+  
+  .ul-prin a:hover:before {
+    margin: 0px 0px 8px 0px;
+    padding: 0px;
+    width: 100%;
+    background: #fff;
+    transition: width .35s ease;
+  }
+  }
+  
+  /* estilo de menu */
+  

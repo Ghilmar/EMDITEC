@@ -1,0 +1,96 @@
+* {	margin: 0px;	
+    padding: 0px;
+}
+.contenedor {	
+    width: 100%;	
+    max-width: 1000px;	
+    margin: 20px auto;	
+/*    display: grid;	*/
+    grid-gap: 20px;	
+    grid-template-columns: repeat(3, 1fr);	
+    grid-template-rows: repeat(4, auto); 	
+    grid-template-areas: "header header header"	 "contenido contenido sidebar"	"widget-1 widget-2 sidebar"	 "footer footer footer";
+} 
+.contenedor > div,.contenedor .header,.contenedor .contenido,.contenedor .sidebar,.contenedor  {	
+    background: #fff;	
+    padding: 20px;	
+    border-radius: 10px;
+} 
+ 
+.contenedor .contenido {	
+    grid-area: contenido;
+} 
+
+.contenedor .contenido h1{
+    font-size: 40px;
+}
+.contenedor .sidebar {	
+    grid-column: 1 / 4;	
+    background: #fAA43D;	
+
+    align-items: none;		
+    min-height: 100px;	
+    grid-area: sidebar;
+} 
+
+.contenedor .sidebar h3{
+    position: relative;
+    padding: 10px;
+    text-align: center;
+    font-size: 30px;
+}
+.pa-2{
+    position: relative;
+    padding: 5px;
+    font-size: 18px;
+
+    letter-spacing: 0pt;      /* para separar entgre letras */
+    word-spacing: 3pt;        /* para separacion entre palabras */  
+    line-height: 18pt;        /* para la separacion entre lineas */ 
+    text-indent: 30pt;        /* para sangrias */
+}
+.pa-2 ul {
+    
+    padding: 5px;
+    font-size: 18px;
+    /* padding-left: 5px; */
+
+}
+
+.pa{
+    position: relative;
+    padding: 5px;
+    font-size: 18px;
+    /* padding-left: 5px; */
+    letter-spacing: 0pt;      /* para separar entgre letras */
+    word-spacing: 3pt;        /* para separacion entre palabras */  
+    line-height: 18pt;        /* para la separacion entre lineas */ 
+    text-indent: 0pt;        /* para sangrias o prara cuando empriesa a excribir el parrafo*/
+}
+
+.contenedor .widget-1,.contenedor .widget-2 {	
+    background: #55a8fd;	
+    color: #fff;	
+    height: 100px;	
+    text-align: center;	
+    display: flex;	
+    align-items: center;	
+    justify-content: center;
+} 
+.contenedor .widget-1 {	
+    grid-area: widget-1;
+} 
+.contenedor .widget-2 {	
+    grid-area: widget-2;
+} 
+.contenedor .footer {	
+    background: #12203E;	
+    color: #fff;	
+    grid-area: footer;} 
+@media screen and (max-width: 768px){	
+        .contenedor {		
+        grid-template-areas: "header header header"						
+         "contenido contenido contenido"						 
+        "sidebar sidebar sidebar"						 
+        "widget-1 widget-1 widget-2"						 
+        "footer footer footer";	}}  
