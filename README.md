@@ -1,3 +1,13 @@
+# Requerimiento del proyecto
+## Ejecute los siguientes comandos 
+
+npm install bootstrap --save
+
+npm install jquery --save
+
+npm install popper.js --save
+
+
 # Emditec
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.4.
